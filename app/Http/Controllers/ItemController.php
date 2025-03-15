@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Auth;
 class ItemController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Mostrar una lista paginada de items.
      */
     public function index()
     {
@@ -22,7 +22,7 @@ class ItemController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Mostrar el formulario para crear un nuevo item.
      */
     public function create()
     {
@@ -30,7 +30,7 @@ class ItemController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Crear un nuevo item en la base de datos.
      */
     public function store(Request $request)
     {
@@ -56,7 +56,7 @@ class ItemController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Mostrar el item específico.
      */
     public function show(Item $item)
     {
@@ -66,7 +66,7 @@ class ItemController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Mostrar el formulario para editar un item.
      */
     public function edit(Item $item)
     {
@@ -76,7 +76,7 @@ class ItemController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Actualizar un item existente.
      */
     public function update(Request $request, Item $item)
     {
@@ -103,7 +103,7 @@ class ItemController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Eliminar un item.
      */
     public function destroy(Item $item)
     {

@@ -35,4 +35,21 @@ class Invoice extends Model
     {
         return $this->hasMany(Payment::class);
     }
+
+    public function updateTotals()
+    {
+        $items = $items->items;
+
+        $subtotal = $items->sum('subtotal');
+        $tax = $items->sum('tax_amount');
+        $discount = $items->sum('discount_amount');
+        $total = $subtotal + $tax - $discount;
+
+        $this->update([
+            'subtotal' => $subtotal,
+            'tax_amount' => $tax,
+            'discount_amount' => $discount,
+            'total' => $total
+        ]);
+    }
 }
