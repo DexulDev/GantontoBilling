@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> bbf000c3a5a8e0f11c7a9dc07a6f21f3378203fb
 # GantontoBilling
 GatontoBilling is a Laravel 12 lightweight and efficient invoicing system designed to streamline the process of generating and managing invoices.
 
@@ -16,6 +19,7 @@ GatontoBilling is a Laravel 12 lightweight and efficient invoicing system design
 - **Database:** MySQL but can handle another databases if you configure them.
 - **Authentication:** OAuth
 - **Deployment:** Laravel Forge
+- **Payment Processing:** Stripe
 
 ## 📌 Installation
 1. Clone the repository:
@@ -33,11 +37,29 @@ GatontoBilling is a Laravel 12 lightweight and efficient invoicing system design
    cp .env.example .env
    php artisan key:generate
    ```
-4. Configure the database in the `.env` file and run migrations:
+4. Configure the database in the `.env` file:
+   ```
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=your_database_name
+   DB_USERNAME=your_database_user
+   DB_PASSWORD=your_database_password
+   ```
+
+5. Configure Stripe API keys in the `.env` file:
+   ```
+   STRIPE_KEY=your_stripe_publishable_key
+   STRIPE_SECRET=your_stripe_secret_key
+   STRIPE_WEBHOOK_SECRET=your_stripe_webhook_secret
+   ```
+
+6. Run migrations and seed the database:
    ```sh
    php artisan migrate --seed
    ```
-5. Start the development server:
+
+7. Start the development server:
    ```sh
    php artisan serve
    ```
@@ -46,7 +68,29 @@ GatontoBilling is a Laravel 12 lightweight and efficient invoicing system design
    npm run dev
    ```
 
+## 🔄 Using Stripe CLI for Local Testing
+
+To test Stripe webhooks locally:
+
+1. [Download and install the Stripe CLI](https://stripe.com/docs/stripe-cli)
+
+2. Login to your Stripe account:
+   ```sh
+   stripe login
+   ```
+
+3. Start listening to webhook events:
+   ```sh
+   stripe listen --forward-to http://localhost:8000/stripe/webhook
+   ```
+
+4. The CLI will output a webhook signing secret. Copy this to your `.env` file:
+   ```
+   STRIPE_WEBHOOK_SECRET=whsec_your_signing_secret_from_cli
+   ```
+
 ## 💡 Future Enhancements
+- OAuth
 - Multi-currency support
 - Automated email invoicing
 - Integration with accounting software
