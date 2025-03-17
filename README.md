@@ -14,7 +14,7 @@ GatontoBilling is a Laravel 12 lightweight and efficient invoicing system design
 - **Frontend:** Vue.js
 - **Database:** MySQL but can handle another databases if you configure them.
 - **Authentication:** OAuth
-- **Deployment:** Laravel Forge
+- **Deployment:** Railway App
 - **Payment Processing:** Stripe
 
 ## 📌 Installation
@@ -94,4 +94,4 @@ To test Stripe webhooks locally:
 ## 📜 License
 This project is licensed under the MIT License.
 
-🚀 Built with passion by [DexulDev](https://github.com/DexulDev) & Gatonto Solutions S.A. de C.V.
+🚀 Built with passion by [DexulDev](https://github.com/DexulDev) for Gatonto Solutions S.A. de C.V.
