@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> bbf000c3a5a8e0f11c7a9dc07a6f21f3378203fb
 # GantontoBilling
 GatontoBilling is a Laravel 12 lightweight and efficient invoicing system designed to streamline the process of generating and managing invoices.
 
