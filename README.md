@@ -1,4 +1,5 @@
 # GantontoBilling
+## NOT FINISHED
 GatontoBilling is a Laravel 12 lightweight and efficient invoicing system designed to streamline the process of generating and managing invoices.
 
 ## 🚀 Features
@@ -86,10 +87,11 @@ To test Stripe webhooks locally:
    ```
 
 ## 💡 Future Enhancements
-- OAuth
 - Multi-currency support
 - Automated email invoicing
-- Integration with accounting software
+
+## 🛠️ Actually working on
+- OAuth support
 
 ## 📜 License
 This project is licensed under the MIT License.
