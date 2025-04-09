@@ -21,8 +21,8 @@ LaraBilling is a Laravel 12 lightweight and efficient invoicing system designed 
 ## 📌 Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/DexulDev/gatontobilling.git
-   cd gatontobilling
+   git clone https://github.com/DexulDev/larabilling.git
+   cd larabilling
    ```
 2. Install dependencies:
    ```sh
