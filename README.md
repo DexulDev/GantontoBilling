@@ -1,6 +1,6 @@
 # GantontoBilling
 ## NOT FINISHED
-GatontoBilling is a Laravel 12 lightweight and efficient invoicing system designed to streamline the process of generating and managing invoices.
+LaraBilling is a Laravel 12 lightweight and efficient invoicing system designed to streamline the process of generating and managing invoices.
 
 ## 🚀 Features
 - **Invoice Generation** – Easily create invoices with customizable details.

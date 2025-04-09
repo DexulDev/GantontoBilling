@@ -20,3 +20,7 @@ Route::middleware(['auth'])->group(function () {
         ->name('invoice-items.destroy');
 });
 
+Route::get('/', function () {
+    return view('welcome');
+});
+
