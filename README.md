@@ -15,8 +15,8 @@ LaraBilling is a Laravel 12 lightweight and efficient invoicing system designed 
 - **Frontend:** Vue.js
 - **Database:** MySQL but can handle another databases if you configure them.
 - **Authentication:** OAuth
-- **Deployment:** Railway App
-- **Payment Processing:** Laravel Cloud
+- **Deployment:** Laravel Cloud
+- **Payment Processing:** Stripe
 
 ## 📌 Installation
 1. Clone the repository:
